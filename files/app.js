@@ -52,7 +52,8 @@ $(document).ready(function() {
         skills.push(newSkill);
         $("#skillInput").val("");
         addSkills();
-    };
+    }
+    $("#addSkillBtn").click(addSkill);
 
     $("#skillsList").on("click", ".delete-btn", function() {
         const $li = $(this).closest("li");
@@ -98,3 +99,4 @@ function daysUntilDeadLine(endDate){
     return daysDifference;
 }
 let endDate = '2025-12-03';
+
